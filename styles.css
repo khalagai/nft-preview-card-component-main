@@ -1,0 +1,140 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Outfit;
+  min-width: 12rem;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 50%, 16%);
+  min-width: 12rem;
+  max-width: 16rem;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.6rem;
+}
+
+.logo {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.6rem;
+}
+
+.viewEye {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.viewBox {
+  transition: 0.5s ease;
+  height: 100%;
+}
+
+.logo:hover {
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0.7;
+}
+.logo:hover .viewEye {
+  opacity: 1;
+}
+.logo:hover .viewBox {
+  opacity: 0.3;
+}
+
+.info {
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crypto {
+  display: flex;
+}
+
+.amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(178, 100%, 50%);
+  gap: 0.3rem;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+#logoPhoto {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.6rem;
+}
+
+#authorPhoto {
+  height: 1.5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+p {
+  font-size: 0.8rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.ethereum {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+span {
+  color: white;
+  cursor: pointer;
+}
+span:hover {
+  color: hsl(178, 100%, 50%);
+}/*# sourceMappingURL=styles.css.map */

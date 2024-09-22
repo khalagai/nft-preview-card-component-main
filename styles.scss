@@ -1,0 +1,151 @@
+$font-stack: Outfit;
+$font-size: 18px;
+$body-bg: hsl(217, 54%, 11%);
+$card-bg: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$primary-soft: hsl(215, 51%, 70%);
+$primary-cyan: hsl(178, 100%, 50%);
+$footer-color: hsl(228, 45%, 44%);
+$color: white;
+$fw-sm: 300;
+$fw-mid: 400;
+$fw-lg: 600;
+$radius: 0.6rem;
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: $footer-color; }
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: $body-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-stack;
+    min-width: 12rem;
+    height: 100vh;      
+}
+
+.card {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $card-bg;
+    min-width: 12rem;
+    max-width: 16rem;
+    color: $color;
+    padding: 1rem;
+    border-radius: $radius;
+}
+
+.logo {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    border-radius: $radius;
+}
+
+.viewEye {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.viewBox {
+    transition: .5s ease;
+    height: 100%;
+}
+
+.logo:hover {
+    background-color: $primary-cyan;
+    opacity: 0.7;
+
+    .viewEye {
+        opacity: 1;
+    }
+
+    .viewBox {
+        opacity: 0.3;
+    }
+}
+
+.info { 
+    border-bottom: 1px solid $line;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crypto {
+    display: flex;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-cyan;
+    gap: 0.3rem;
+}
+
+.time {    
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+    gap: 1rem;
+}
+#logoPhoto {
+    width: 100%;
+    height: 100%;
+    border-radius: $radius;  
+}
+
+#authorPhoto {
+    height: 1.5rem;
+    border: 2px solid $color;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    &:hover {
+        color: $primary-cyan;
+    }
+}
+
+p {
+    font-size: 0.8rem;
+    color: $primary-soft;
+}
+
+.ethereum {
+    color: $primary-cyan;
+    font-weight: $fw-lg;
+}
+
+span {
+    color: $color;
+    cursor: pointer;
+
+    &:hover {
+        color: $primary-cyan;
+    }
+}
